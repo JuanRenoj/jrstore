@@ -1,0 +1,13 @@
+:root{
+    --primary:#ffffff;
+    --secondary:#2117a1;
+    --acent:#4af2f8;
+    --texto: #414141;
+    --desc: #3a3a3a;
+    --shadow:#bebabaa1;
+    --succes: #0bc173;
+    --danger:#fb5a53;
+    --warning:#FFBF1C;
+    --backfilter:rgba(255, 255, 255, 0.3);
+    --odd:#fafafa;
+  }

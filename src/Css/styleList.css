@@ -1,0 +1,38 @@
+@import url(../Css/Color.css);
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,400;1,300&family=Poppins:wght@300&display=swap'); 
+
+
+.row-item{
+padding: 4px 8px;
+margin: 2px 0px;
+box-shadow: 2px 1px 1px var(--shadow);
+}
+.row-list{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 8px;
+    }
+.title-label{
+    color: var(--texto);
+    font-size: 1rem;
+  font-weight: 700;
+
+}
+.date-label{
+    color: var(--texto);
+    font-size: 0.875rem;  
+}
+.total-label{
+    color: var(--danger);
+    font-size: 1.3rem;  
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+}
+.status-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

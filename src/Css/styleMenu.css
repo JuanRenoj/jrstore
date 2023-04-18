@@ -1,0 +1,194 @@
+
+@import url("./Color.css");
+.div-main{
+    background-color: var(--secondary);
+width: 100%;
+}
+.div-left{
+    position: fixed;
+    background-color: var(--secondary);
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 60px;
+    transition: all 0.5s ease;
+    overflow-y: scroll;
+   
+}
+ .open{
+  width: 200px;
+}
+
+.div-center{
+  background-color: var(--primary);
+  position: relative;
+  left: 60px;
+  top: 0;
+  padding: 0px 3px 0px 3px;
+  width: calc(100% - 60px);
+  transition: all 0.5s ease;
+  overflow: hidden;
+ 
+}
+ .open  ~ .div-center{
+    left:200px;
+    width: calc(100% - 200px);
+}
+ .place-menu{
+position: sticky;
+ height: 35px;
+ padding: 8px 0px;
+
+  top: 0;
+  background-color: var(--secondary);
+  z-index: 3;
+}
+
+.icon-menu{
+  position: absolute;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+  right: 30%;
+  color: var(--acent);
+  
+}
+
+.open .icon-menu{
+  right: 10px;
+  transition: all 0.5s ease;
+}
+.info-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.nameUser{
+  font-size: 0.7rem;
+  color: var(--acent);
+  margin-top: 5px;
+}
+.nameStore{
+font-size: 1rem;
+color: var(--acent);
+}
+.divide {
+  padding: 0px 8px;
+  color: var(--primary);
+}
+.list-items{
+list-style: none;
+padding: 0px 10px;
+margin: 0;
+
+}
+
+.op-item{
+  display: flex;
+  flex-direction: row;
+  color: var(--acent);
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin: 5px 0px;
+  padding: 4px 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border-radius: 7px;
+
+}
+.op-active{
+  background-color: var(--acent);
+  color: var(--primary);
+  border-radius: 7px;
+}
+.op-item:hover,
+.sub-view li:hover{
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 7px;
+
+}
+.op-item i{
+  margin-right: 5px;
+}
+.op-item span{
+  margin-left: 5px;
+}
+/*ssss*/
+.div-left .op-item .title{
+  display: none;
+}
+.open  .op-item .title{
+  display:inline;
+}
+.op-item .ico{
+  position: absolute;
+  right: -4px;
+  
+}
+.sub-view{
+  list-style: none;
+  color: var(--acent);
+  font-size: 0.8rem;
+  display: block;
+  margin: 0;
+  padding: 0px 0px 0px 18px;
+ 
+}
+/*ssss*/
+.sub-close{
+  display: none;
+}
+.sub-view li{
+  margin: 3px 0px;
+  padding: 2px 3px;
+}
+.sub-view li span{
+  margin-left: 4px;
+}
+/*ssss*/
+.div-left .sub-view li span{
+display: none;
+}
+.open .sub-view li span{
+  display: inline;
+}
+/*ssss*/
+.div-left .nameUser,
+.div-left .nameStore{
+  display: none;
+  transition: all 0.5s ease;
+}
+.open  .nameUser,
+.open .nameStore{
+  display: inline;
+  transition: all 0.5s ease;
+}
+.div-left  .nav-items span{
+display: none;
+ 
+}
+
+
+.div-log-out{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--secondary);
+  position: sticky;
+  bottom: 0;
+  font-size: 0.875rem;
+  color: var(--acent);
+  cursor: pointer;
+}
+.div-left .div-log-out span{
+display:none;
+}
+.open .div-log-out span{
+  display:inline;
+  }
+

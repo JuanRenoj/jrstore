@@ -1,0 +1,57 @@
+@import url(../Css/Color.css);
+.dropdown_input {
+    position: relative;
+    cursor: default;
+  }
+  
+ .options_input {
+    display: none;
+  }
+  
+.open_input {
+    display: block;
+    background-color: var(--primary);
+    overflow-y: scroll;
+    border: 1px solid var(--shadow);
+    box-shadow: 0px 2px 5px 0 var(--shadow);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+.option_input {
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px;
+    
+  }
+  
+  .option_input.selected,
+  .option_input:hover {
+    background-color: var(--acent);
+    color: #333;
+  }
+
+  .item-selected{
+    background-color: var(--secondary);
+    height: 30px;
+    width:100px;
+position: relative;
+padding: 4px 8px;
+border-radius: 8px;
+color: var(--primary);
+  }
+  .item-selected .icon-c{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+  }
+  .item-selected{}
